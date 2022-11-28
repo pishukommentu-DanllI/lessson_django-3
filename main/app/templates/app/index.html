@@ -1,0 +1,16 @@
+{% extends 'app/form.html' %}
+
+{% block title %} Main_Page {% endblock %}
+{% block content %}
+    <p>Учусь: Елабужский политехнический колледж</p>
+    <p>Группа: 215-8-2</p>
+    <p>Специальность: Веб-разработчки</p>
+    <p>Странный вопрос...</p>
+
+
+    <a href="{% url 'about' %}">About</a><br>
+    <a href="{% url 'contacts' %}">Contacts</a><br>
+    <a href="{% url 'form' %}">Form</a>
+    <br>
+    <a href="{% url 'home' %}">Home</a>
+{% endblock %}

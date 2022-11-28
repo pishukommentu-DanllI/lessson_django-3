@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Title {% endblock %}</title>
+</head>
+<body>
+
+  {% block sidebar %}
+  <form>
+      <input type="text" placeholder="Name"><br>
+      <input type="text" placeholder="Suname"><br>
+      <input type="email" placeholder="Mail"><br>
+      <label for="1">Woman</label>
+      <input id="1" type="radio" name="radio_gender"><br>
+      <label for="2">Man</label>
+      <input id="2" type="radio" name="radio_gender">
+  </form>
+  {% endblock %}
+
+  {% block content %}
+  <br>
+  <a href="{% url 'home' %}">Home</a>
+  {% endblock %}
+</body>
+</html>
